@@ -19,7 +19,7 @@ def main():
     if st.button("Ask"):
        try:
             response = completion(
-            model= "gemini/gemini-2.0-flash",
+            model= "gemini/gemini-2.5-flash",
             messages=[{"role": "user", "content": user_input}]
         )
             st.success(response['choices'][0]['message']['content'])
